@@ -1,0 +1,35 @@
+﻿@model PublisherModel
+
+
+
+<table class="table">
+
+    <tbody>
+
+
+
+@foreach(var item in Model.BoardGame)
+{
+    <tr>
+        <td>
+
+                @item.Name
+        </td>
+
+        <td class="align-middle">
+                    <img class="rounded-circle" src="game.imageURL" alt="@item.Name" 
+                    style="max-width: 150px">
+        </td>
+        
+    </tr>
+
+
+
+}
+
+
+
+
+    </tbody>
+
+</table>
